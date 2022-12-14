@@ -1,13 +1,22 @@
-#include <stdio.h>
+#include "main.h"
 
 /**
 * main - _putchar, followed by a new line.
 *
-* Return: Always 0 (Success)
+* Return: zero if true
 */
 int main(void)
 {
-	putchar('_putchar\n');
-	putchar("\n");
-	return (0);
+	char c[] = "_putchar";
+	int i;
+
+	for (i = 0; c[i] != 00 ; i++)
+	{
+		_putchar (c[i]);
+	}
+
+_putchar('\n');
+
+return (0);
+
 }
